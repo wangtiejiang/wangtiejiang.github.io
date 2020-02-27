@@ -26,5 +26,32 @@
   
   
   
+  <entry>
+    <title>玩转iTerm</title>
+    <link href="/2020/02/26/iterm/"/>
+    <url>/2020/02/26/iterm/</url>
+    
+    <content type="html"><![CDATA[<p>##shell<br>用户使用linux的桥梁，常用的shell有sh、bash、csh、dash等<br>#####查看系统有几种shell：</p><pre><code class="bash">$ cat /etc/shells</code></pre><p>zsh，史称终极shell，快速上手zsh项目oh my zsh，Github：<a href="https://github.com/ohmyzsh/ohmyzsh" target="_blank" rel="noopener">https://github.com/ohmyzsh/ohmyzsh</a><br>#####查看zsh版本</p><pre><code class="bash">$ zsh --version$ echo $ZSH_VERSION</code></pre><p>#####安装zsh</p><pre><code class="bash">$ brew install zsh zsh-completions</code></pre><p>#####查看当前默认shell，以及修改默认shell</p><pre><code class="bash">$ echo $SHELL$ chsh -s /bin/zsh </code></pre><p>操作完成后，重新启动iTerm<br>#####安装oh my zsh</p><pre><code class="bash">#方法一：wget自动化安装（先行安装wget）$ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh#方法二：$ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh #官网上的另外一种写法 $ sh -c &quot;$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)&quot;$ sh -c &quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;#方法三：当然也可以通过git下载$ git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>Mac</category>
+      
+      <category>iTerm</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>iterm</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
   
 </search>
