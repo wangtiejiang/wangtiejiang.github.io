@@ -171,18 +171,16 @@
       <div class="py-5 z-depth-3" id="board">
         <div class="post-content mx-auto" id="post">
           <div class="markdown-body">
-            <p>##shell<br>用户使用linux的桥梁，常用的shell有sh、bash、csh、dash等<br>#####查看系统有几种shell：</p>
-<pre><code class="bash">$ cat /etc/shells</code></pre>
-<p>zsh，史称终极shell，快速上手zsh项目oh my zsh，Github：<a href="https://github.com/ohmyzsh/ohmyzsh" target="_blank" rel="noopener">https://github.com/ohmyzsh/ohmyzsh</a><br>#####查看zsh版本</p>
-<pre><code class="bash">$ zsh --version
+            <h2 id="shell"><a href="#shell" class="headerlink" title="shell"></a>shell</h2><p>用户使用linux的桥梁，常用的shell有sh、bash、csh、dash等</p>
+<h5 id="查看系统有几种shell："><a href="#查看系统有几种shell：" class="headerlink" title="查看系统有几种shell："></a>查看系统有几种shell：</h5><pre><code class="bash">$ cat /etc/shells</code></pre>
+<p>zsh，史称终极shell，快速上手zsh项目oh my zsh，Github：<a href="https://github.com/ohmyzsh/ohmyzsh" target="_blank" rel="noopener">https://github.com/ohmyzsh/ohmyzsh</a></p>
+<h5 id="查看zsh版本"><a href="#查看zsh版本" class="headerlink" title="查看zsh版本"></a>查看zsh版本</h5><pre><code class="bash">$ zsh --version
 $ echo $ZSH_VERSION</code></pre>
-<p>#####安装zsh</p>
-<pre><code class="bash">$ brew install zsh zsh-completions</code></pre>
-<p>#####查看当前默认shell，以及修改默认shell</p>
-<pre><code class="bash">$ echo $SHELL
+<h5 id="安装zsh"><a href="#安装zsh" class="headerlink" title="安装zsh"></a>安装zsh</h5><pre><code class="bash">$ brew install zsh zsh-completions</code></pre>
+<h5 id="查看当前默认shell，以及修改默认shell"><a href="#查看当前默认shell，以及修改默认shell" class="headerlink" title="查看当前默认shell，以及修改默认shell"></a>查看当前默认shell，以及修改默认shell</h5><pre><code class="bash">$ echo $SHELL
 $ chsh -s /bin/zsh </code></pre>
-<p>操作完成后，重新启动iTerm<br>#####安装oh my zsh</p>
-<pre><code class="bash">#方法一：wget自动化安装（先行安装wget）
+<p>操作完成后，重新启动iTerm</p>
+<h5 id="安装oh-my-zsh"><a href="#安装oh-my-zsh" class="headerlink" title="安装oh my zsh"></a>安装oh my zsh</h5><pre><code class="bash">#方法一：wget自动化安装（先行安装wget）
 $ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
 #方法二：
 $ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh 
