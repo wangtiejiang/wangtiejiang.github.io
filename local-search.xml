@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>GIt常用命令</title>
+    <link href="/2020/02/27/GIt%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <url>/2020/02/27/GIt%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+    
+    <content type="html"><![CDATA[<h5 id="安装Git-使用Homebrew"><a href="#安装Git-使用Homebrew" class="headerlink" title="安装Git (使用Homebrew)"></a>安装Git (使用<a href="https://brew.sh/" target="_blank" rel="noopener">Homebrew</a>)</h5><pre><code class="bash"># Mac用户brew install git# Linux用户sudo yum install gitsudo apt-get install git# Windows用户[Git for windows](https://gitforwindows.org/)</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>Linux</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>git</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>玩转iTerm</title>
     <link href="/2020/02/26/iterm/"/>
     <url>/2020/02/26/iterm/</url>
