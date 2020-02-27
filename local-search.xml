@@ -8,7 +8,7 @@
     <link href="/2020/02/27/GIt%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     <url>/2020/02/27/GIt%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
     
-    <content type="html"><![CDATA[<h5 id="安装Git-使用Homebrew"><a href="#安装Git-使用Homebrew" class="headerlink" title="安装Git (使用Homebrew)"></a>安装Git (使用<a href="https://brew.sh/" target="_blank" rel="noopener">Homebrew</a>)</h5><pre><code class="bash"># Mac用户brew install git# Linux用户sudo yum install gitsudo apt-get install git# Windows用户[Git for windows](https://gitforwindows.org/)</code></pre>]]></content>
+    <content type="html"><![CDATA[<h5 id="安装Git-使用Homebrew"><a href="#安装Git-使用Homebrew" class="headerlink" title="安装Git (使用Homebrew)"></a>安装Git (使用<a href="https://brew.sh/" target="_blank" rel="noopener">Homebrew</a>)</h5><pre><code class="bash"># Mac用户brew install git# Linux用户sudo yum install gitsudo apt-get install git# Windows用户https://gitforwindows.org</code></pre><h5 id="基本使用（-阮一峰-老师常用Git命令清单）"><a href="#基本使用（-阮一峰-老师常用Git命令清单）" class="headerlink" title="基本使用（@阮一峰 老师常用Git命令清单）"></a>基本使用（@阮一峰 老师<a href="http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html" target="_blank" rel="noopener">常用Git命令清单</a>）</h5><p><img src="/images/pasted-2.png" srcset="/img/loading.gif" alt="upload successful"></p><blockquote><p>Workspace：工作区；<br>Index / Stage：暂存区；<br>Repository：仓库区（或本地仓库）；<br>Remote：远程仓库；</p></blockquote>]]></content>
     
     
     <categories>
