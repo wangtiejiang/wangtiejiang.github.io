@@ -8,7 +8,7 @@
     <link href="/2020/02/28/Markdown%E8%AF%AD%E6%B3%95/"/>
     <url>/2020/02/28/Markdown%E8%AF%AD%E6%B3%95/</url>
     
-    <content type="html"><![CDATA[<h4 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h4><h5 id="1、使用-和-标记一级和二级标题"><a href="#1、使用-和-标记一级和二级标题" class="headerlink" title="1、使用 = 和 - 标记一级和二级标题"></a>1、使用 = 和 - 标记一级和二级标题</h5><blockquote><h1 id="我展示的是一级标题"><a href="#我展示的是一级标题" class="headerlink" title="我展示的是一级标题"></a>我展示的是一级标题</h1><h2 id="我展示的是二级标题"><a href="#我展示的是二级标题" class="headerlink" title="我展示的是二级标题"></a>我展示的是二级标题</h2></blockquote>]]></content>
+    <content type="html"><![CDATA[<h4 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h4><h5 id="1、使用-和-标记一级和二级标题"><a href="#1、使用-和-标记一级和二级标题" class="headerlink" title="1、使用 = 和 - 标记一级和二级标题"></a>1、使用 = 和 - 标记一级和二级标题</h5><pre><code class="markdown">我展示的是一级标题==我展示的是二级标题--</code></pre><p>显示效果：<br><img src="/images/pasted-3.png" srcset="/img/loading.gif" alt="upload successful"></p><h5 id="2、使用-号标记"><a href="#2、使用-号标记" class="headerlink" title="2、使用 # 号标记"></a>2、使用 # 号标记</h5><p>使用··</p>]]></content>
     
     
     <categories>
