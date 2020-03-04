@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>联通光纤配置</title>
+    <link href="/2020/03/04/%E8%81%94%E9%80%9A%E5%85%89%E7%BA%A4%E9%85%8D%E7%BD%AE/"/>
+    <url>/2020/03/04/%E8%81%94%E9%80%9A%E5%85%89%E7%BA%A4%E9%85%8D%E7%BD%AE/</url>
+    
+    <content type="html"><![CDATA[<p>1、登录管理员账户后，选择 <code>基本配置</code><br><img src="/images/pasted-10.png" srcset="/img/loading.gif" alt="upload successful"></p><p>2、<code>上行线路配置</code>如图做相关配置<br><img src="/images/pasted-11.png" srcset="/img/loading.gif" alt="upload successful"></p><p>公司网络拓扑图<br>①：路由器和交换机并联到光猫LAN1和LAN2<br>②：步骤2设置时，需要明确LAN端口绑定行为<br>③：PPPoE拨号由光猫完成<br><img src="/images/pasted-12.png" srcset="/img/loading.gif" alt="upload successful"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Internet</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>联通光纤</tag>
+      
+      <tag>internet</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Markdown语法</title>
     <link href="/2020/02/28/Markdown%E8%AF%AD%E6%B3%95/"/>
     <url>/2020/02/28/Markdown%E8%AF%AD%E6%B3%95/</url>
