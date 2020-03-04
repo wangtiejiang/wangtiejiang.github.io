@@ -8,7 +8,7 @@
     <link href="/2020/03/04/%E8%81%94%E9%80%9A%E5%85%89%E7%BA%A4%E9%85%8D%E7%BD%AE/"/>
     <url>/2020/03/04/%E8%81%94%E9%80%9A%E5%85%89%E7%BA%A4%E9%85%8D%E7%BD%AE/</url>
     
-    <content type="html"><![CDATA[<h3 id="光猫补充配置"><a href="#光猫补充配置" class="headerlink" title="光猫补充配置"></a>光猫补充配置</h3><p>1、登录管理员账户后，选择 <code>基本配置</code><br><img src="/images/pasted-10.png" srcset="/img/loading.gif" alt="upload successful"></p><p>2、<code>上行线路配置</code>如图做相关配置<br><img src="/images/pasted-11.png" srcset="/img/loading.gif" alt="upload successful"></p><p>公司网络拓扑图<br>①：路由器和交换机并联到光猫LAN1和LAN2<br>②：步骤2设置时，需要明确LAN端口绑定行为<br>③：PPPoE拨号由光猫完成<br><img src="/images/pasted-12.png" srcset="/img/loading.gif" alt="upload successful"></p><h3 id="联通电话故障解决概要"><a href="#联通电话故障解决概要" class="headerlink" title="联通电话故障解决概要"></a>联通电话故障解决概要</h3><p>设备 phone1 或 phone2灯闪烁，以及打入电话时提示占线，拔掉闪烁灯光链路，停止闪烁，说明线路串线或接触不良</p>]]></content>
+    <content type="html"><![CDATA[<h3 id="光猫补充配置"><a href="#光猫补充配置" class="headerlink" title="光猫补充配置"></a>光猫补充配置</h3><p>1、登录管理员账户后，选择 <code>基本配置</code><br><img src="/images/pasted-10.png" srcset="/img/loading.gif" alt="upload successful"></p><p>2、<code>上行线路配置</code>如图做相关配置<br>①：连接方式选择<code>桥接</code>时，拨号的行为将交给路由或其他设置完成，交换机获得网络许可需连接拨号后的设备入网<br><img src="/images/pasted-11.png" srcset="/img/loading.gif" alt="upload successful"></p><p>公司网络拓扑图<br>①：路由器和交换机并联到光猫LAN1和LAN2<br>②：步骤2设置时，需要明确LAN端口绑定行为<br>③：PPPoE拨号由光猫完成<br><img src="/images/pasted-12.png" srcset="/img/loading.gif" alt="upload successful"></p><h3 id="联通电话故障解决概要"><a href="#联通电话故障解决概要" class="headerlink" title="联通电话故障解决概要"></a>联通电话故障解决概要</h3><p>设备 phone1 或 phone2灯闪烁，以及打入电话时提示占线，拔掉闪烁灯光链路，停止闪烁，说明线路串线或接触不良</p>]]></content>
     
     
     <categories>
