@@ -16,7 +16,7 @@
   <meta name="description" content="">
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
-  <title>归档 ~ Wang TJ&#39;s Blog</title>
+  <title>EXCEL连接数据库 ~ Wang TJ&#39;s Blog</title>
 
   <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css"  >
 <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css"  >
@@ -106,8 +106,8 @@
   </div>
 </nav>
 
-    <div class="view intro-2" id="background" parallax=true
-         style="background: url('/img/oriental_fantasy_art-wallpaper-1920x1080.jpg') no-repeat center center;
+    <div class="view intro-2" id="background" false
+         style="background: url('/img/default.png') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask rgba-black-light flex-center">
@@ -116,6 +116,41 @@
               
             </span>
 
+            
+              <br>
+              
+                <p class="mt-3">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
+                  星期二, 三月 24日 2020, 5:48 下午
+                </p>
+              
+
+              <p>
+                
+                  
+                  &nbsp;<i class="far fa-chart-bar"></i>
+                  <span class="post-count">
+                    347 字
+                  </span>&nbsp;
+                
+
+                
+                  
+                  &nbsp;<i class="far fa-clock"></i>
+                  <span class="post-count">
+                      1 分钟
+                  </span>&nbsp;
+                
+
+                
+                  <!-- 不蒜子统计文章PV -->
+                  
+                  &nbsp;<i class="far fa-eye" aria-hidden="true"></i>&nbsp;
+                  <span id="busuanzi_container_page_pv">
+                    <span id="busuanzi_value_page_pv"></span> 次
+                  </span>&nbsp;
+                
+              </p>
             
           </div>
 
@@ -127,41 +162,77 @@
 
   <main>
     
-      <div class="container nopadding-md">
-        <div class="py-5 z-depth-3" id="board">
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<div class="list-group">
-  <p class="h4">共计 5 篇文章</p>
-  <hr>
-  
-    
       
-      <p class="h5">2020</p>
-    
-    <a href="/2020/03/24/VBA-EXCEL/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">EXCEL连接数据库</span>
-      <span style="float: right;">03-24</span>
-    </a>
-  
-    
-    <a href="/2020/03/04/%E8%81%94%E9%80%9A%E5%85%89%E7%BA%A4%E9%85%8D%E7%BD%AE/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">联通光纤配置</span>
-      <span style="float: right;">03-04</span>
-    </a>
-  
-</div>
 
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="py-5 z-depth-3" id="board">
+        <div class="post-content mx-auto" id="post">
+          <div class="markdown-body">
+            <blockquote>
+<p>此博客主要针对macOS系统Excel连接MySQL数据库的设置问题，如果不修改配置文件，在实测过程中是不能成功的<br>这里不建议安装官方两种第三方驱动，用起来比较麻烦OpenLink Software、Actual Technologies</p>
+</blockquote>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="安装MySQL官网ODBC驱动"><a href="#安装MySQL官网ODBC驱动" class="headerlink" title="安装MySQL官网ODBC驱动"></a>安装MySQL官网ODBC驱动</h3><p><a href="https://dev.mysql.com/downloads/connector/odbc/" target="_blank" rel="noopener">官方地址</a><code>https://dev.mysql.com/downloads/connector/odbc/</code><br>根据你要连接的MySQL数据库版本，选择合适版本的驱动下载</p>
+<h3 id="安装iODBC管理工具"><a href="#安装iODBC管理工具" class="headerlink" title="安装iODBC管理工具"></a>安装iODBC管理工具</h3><p><a href="http://www.iodbc.org/dataspace/doc/iodbc/wiki/iodbcWiki/Downloads#Mac%20OS%20X" target="_blank" rel="noopener">官方地址</a><code>http://www.iodbc.org/dataspace/doc/iodbc/wiki/iodbcWiki/Downloads#Mac%20OS%20X</code><br>下载时明确Mac系统以及版本</p>
+<h2 id="配置DSN"><a href="#配置DSN" class="headerlink" title="配置DSN"></a>配置DSN</h2><blockquote>
+<p>不做配置在Excel里使用或添加DSN，会显示加载不了ODBC驱动，原因在Excel没有权限去读ODBC驱动文件，其它过多的场景未做测试，以下配置方式可解决问题<br>1、打开iODBC<br><img src="/images/pasted-14.png" srcset="/img/loading.gif" alt="upload successful"><br>2、选择System DSN标签，点击Add添加<br><img src="/images/pasted-15.png" srcset="/img/loading.gif" alt="upload successful"><br>3、选择驱动，ANSI或Unicode是编码的区别，可任意选择<br><img src="/images/pasted-17.png" srcset="/img/loading.gif" alt="upload successful"><br>4、配置需要连接的MySQL数据库参数<br><img src="/images/pasted-16.png" srcset="/img/loading.gif" alt="upload successful"><br>5、进入/usr/local，找到含有connector字眼的目录，进入lib子目录，找到如下两个文件<br><img src="/images/pasted-18.png" srcset="/img/loading.gif" alt="upload successful"><br><img src="/images/pasted-19.png" srcset="/img/loading.gif" alt="upload successful"><br>6、将这两个文件复制到<code>/Library/ODBC</code>目录下，如遇没有权限<code>chown -R roor:wheel</code>，根据自身情况做调整<br><img src="/images/pasted-20.png" srcset="/img/loading.gif" alt="upload successful"><br>7、编辑该目录下odbc.ini文件Driver value值为<code>/Library/ODBC/***.so</code><br><img src="/images/pasted-21.png" srcset="/img/loading.gif" alt="upload successful"><br>8、至此，我们可以在Excel中连接MySQL数据库</p>
+</blockquote>
 
-              </div>
-            </div>
+            <hr>
+          </div>
+          <br>
+          <div>
+            <p>
+            
+              <span>
+                <i class="iconfont icon-inbox"></i>
+                
+                  <a class="hover-with-bg" href="/categories/VBA/">VBA</a>
+                  &nbsp;
+                
+              </span>&nbsp;&nbsp;
+            
+            
+              <span>
+                <i class="iconfont icon-tag"></i>
+                
+                  <a class="hover-with-bg" href="/tags/excel/">excel</a>
+                
+                  <a class="hover-with-bg" href="/tags/vba/">vba</a>
+                
+              </span>
+            
+            </p>
+            
+              <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+            
           </div>
         </div>
       </div>
+    </div>
+    <div class="d-none d-lg-block col-lg-2 toc-container">
+      
+  <div id="toc">
+    <p class="h5"><i class="far fa-list-alt"></i>&nbsp;目录</p>
+    <div id="tocbot"></div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- custom -->
+
+
+<!-- Comments -->
+<div class="col-lg-7 mx-auto nopadding-md">
+  <div class="container comments mx-auto" id="comments">
+    
+  </div>
+</div>
+
     
   </main>
 
@@ -240,6 +311,26 @@
 
 
 
+  <script src="/js/post.js" ></script>
+  
+    <script src="https://cdn.staticfile.org/tocbot/4.10.0/tocbot.min.js" ></script>
+    <script>
+      $(document).ready(function () {
+        tocbot.init({
+          tocSelector: '#tocbot',
+          contentSelector: '.post-content',
+          headingSelector: 'h1,h2,h3,h4,h5,h6',
+          linkClass: 'tocbot-link',
+          activeLinkClass: 'tocbot-active-link',
+          listClass: 'tocbot-list',
+          isCollapsedClass: 'tocbot-is-collapsed',
+          collapsibleClass: 'tocbot-is-collapsible',
+          scrollSmooth: true,
+        });
+      });
+    </script>
+  
+
 
 
 
@@ -266,7 +357,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "归档&nbsp;",
+        "EXCEL连接数据库&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,

@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>EXCEL连接数据库</title>
+    <link href="/2020/03/24/VBA-EXCEL/"/>
+    <url>/2020/03/24/VBA-EXCEL/</url>
+    
+    <content type="html"><![CDATA[<blockquote><p>此博客主要针对macOS系统Excel连接MySQL数据库的设置问题，如果不修改配置文件，在实测过程中是不能成功的<br>这里不建议安装官方两种第三方驱动，用起来比较麻烦OpenLink Software、Actual Technologies</p></blockquote><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="安装MySQL官网ODBC驱动"><a href="#安装MySQL官网ODBC驱动" class="headerlink" title="安装MySQL官网ODBC驱动"></a>安装MySQL官网ODBC驱动</h3><p><a href="https://dev.mysql.com/downloads/connector/odbc/" target="_blank" rel="noopener">官方地址</a><code>https://dev.mysql.com/downloads/connector/odbc/</code><br>根据你要连接的MySQL数据库版本，选择合适版本的驱动下载</p><h3 id="安装iODBC管理工具"><a href="#安装iODBC管理工具" class="headerlink" title="安装iODBC管理工具"></a>安装iODBC管理工具</h3><p><a href="http://www.iodbc.org/dataspace/doc/iodbc/wiki/iodbcWiki/Downloads#Mac%20OS%20X" target="_blank" rel="noopener">官方地址</a><code>http://www.iodbc.org/dataspace/doc/iodbc/wiki/iodbcWiki/Downloads#Mac%20OS%20X</code><br>下载时明确Mac系统以及版本</p><h2 id="配置DSN"><a href="#配置DSN" class="headerlink" title="配置DSN"></a>配置DSN</h2><blockquote><p>不做配置在Excel里使用或添加DSN，会显示加载不了ODBC驱动，原因在Excel没有权限去读ODBC驱动文件，其它过多的场景未做测试，以下配置方式可解决问题<br>1、打开iODBC<br><img src="/images/pasted-14.png" srcset="/img/loading.gif" alt="upload successful"><br>2、选择System DSN标签，点击Add添加<br><img src="/images/pasted-15.png" srcset="/img/loading.gif" alt="upload successful"><br>3、选择驱动，ANSI或Unicode是编码的区别，可任意选择<br><img src="/images/pasted-17.png" srcset="/img/loading.gif" alt="upload successful"><br>4、配置需要连接的MySQL数据库参数<br><img src="/images/pasted-16.png" srcset="/img/loading.gif" alt="upload successful"><br>5、进入/usr/local，找到含有connector字眼的目录，进入lib子目录，找到如下两个文件<br><img src="/images/pasted-18.png" srcset="/img/loading.gif" alt="upload successful"><br><img src="/images/pasted-19.png" srcset="/img/loading.gif" alt="upload successful"><br>6、将这两个文件复制到<code>/Library/ODBC</code>目录下，如遇没有权限<code>chown -R roor:wheel</code>，根据自身情况做调整<br><img src="/images/pasted-20.png" srcset="/img/loading.gif" alt="upload successful"><br>7、编辑该目录下odbc.ini文件Driver value值为<code>/Library/ODBC/***.so</code><br><img src="/images/pasted-21.png" srcset="/img/loading.gif" alt="upload successful"><br>8、至此，我们可以在Excel中连接MySQL数据库</p></blockquote>]]></content>
+    
+    
+    <categories>
+      
+      <category>VBA</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>excel</tag>
+      
+      <tag>vba</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>联通光纤配置</title>
     <link href="/2020/03/04/%E8%81%94%E9%80%9A%E5%85%89%E7%BA%A4%E9%85%8D%E7%BD%AE/"/>
     <url>/2020/03/04/%E8%81%94%E9%80%9A%E5%85%89%E7%BA%A4%E9%85%8D%E7%BD%AE/</url>
