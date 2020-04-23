@@ -130,7 +130,7 @@
                   
                   &nbsp;<i class="far fa-chart-bar"></i>
                   <span class="post-count">
-                    856 字
+                    1k 字
                   </span>&nbsp;
                 
 
@@ -183,7 +183,20 @@
 <h2 id="Frp实际部署"><a href="#Frp实际部署" class="headerlink" title="Frp实际部署"></a>Frp实际部署</h2><h3 id="frp是什么"><a href="#frp是什么" class="headerlink" title="frp是什么"></a>frp是什么</h3><blockquote>
 <p><a href="https://github.com/fatedier/frp/blob/v0.32.1/README_zh.md" target="_blank" rel="noopener">frp</a>是一个反向代理软件，它体积轻量但功能很强大，可以使处于内网或防火墙后的设备对外界提供服务，它支持HTTP、TCP、UDP等众多协议。我们今天仅讨论TCP和UDP相关的内容<br>截止本文完成，frp的最新版本为v0.32.1，本文使用最新版本操作</p>
 </blockquote>
-<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><p>1.VPS一台（也可以是具有公网IP的实体机）<br>2.访问目标设备（最终要访问的内网设备）<br>3.根据系统架构不同，下载相应frp版本源码</p>
+<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><p>1.VPS一台（也可以是具有公网IP的实体机）<br>2.访问目标设备（最终要访问的内网设备），下面演示机器为公司局域网服务器<br>3.根据系统架构不同，下载相应frp版本源码</p>
+<h3 id="服务端设置"><a href="#服务端设置" class="headerlink" title="服务端设置"></a>服务端设置</h3><p>运行如下命令查看处理器架构，根据架构下载不同版本的frp，如果是”X86_64“即可选择”amd64“</p>
+<pre><code>arch</code></pre><p>运行如下命令，根据架构不同，调整版本后执行</p>
+<pre><code>wget https://github.com/fatedier/frp/releases/download/v0.32.1/frp_0.32.1_linux_amd64.tar.gz</code></pre><p>解压文件</p>
+<pre><code>tar -zxvf frp_0.32.1_linux_amd64.tar.gz</code></pre><p>更名文件夹，方便使用</p>
+<pre><code>mv frp_0.32.1_linux_amd64 frp</code></pre><p>进入frp文件夹</p>
+<pre><code>cd frp</code></pre><p>服务端只需要关注以下文件  </p>
+<ul>
+<li>frps</li>
+<li>frps_full.ini（未探索作用，先做保留）</li>
+<li>frps.ini</li>
+</ul>
+<p>frpc、frpc_full.ini、frpc.ini为客户端程序和配置文件，服务端可删除</p>
+<pre><code>rm -rf frpc*</code></pre><p>配置frps.ini文件</p>
 
             <hr>
           </div>
